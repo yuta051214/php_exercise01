@@ -6,6 +6,10 @@ $num = trim(fgets(STDIN));
 // ここに処理を記述
 $judgement = true;
 
+if($num == 1){
+    $judgement = false;
+};
+
 for($i = 2; $i < $num; $i++){
     if($num % $i == 0){
         $judgement = false;
